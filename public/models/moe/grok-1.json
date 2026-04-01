@@ -1,0 +1,46 @@
+{
+  "slug": "grok-1",
+  "name": "Grok-1",
+  "category": "moe",
+  "year": 2024,
+  "org": "xAI",
+  "brainrotTitle": "the chaotic neutral",
+  "brainrotOneliner": "314B parameters, 8 experts, 2 active, actually open-source. elon dropped the weights and walked away.",
+  "stats": {
+    "totalParams": "314B",
+    "activeParams": "86B",
+    "contextLength": "8192",
+    "layers": 64,
+    "attentionHeads": 48,
+    "license": "Apache 2.0"
+  },
+  "brainrotStats": {
+    "totalParams": "314B (suspiciously round number, pi reference not lost on us)",
+    "activeParams": "86B active (chunky active path ngl)",
+    "contextLength": "8k tokens (short context era, embarrassing now)",
+    "layers": "64 layers (going deep, chaotically)",
+    "attentionHeads": "48 heads (non-standard, very xAI of them)",
+    "license": "Apache 2.0 (surprisingly open for xAI)"
+  },
+  "architectureType": "moe",
+  "keyInnovations": [
+    "8-expert MoE with 2 experts active per forward pass — similar to Mixtral but at larger scale",
+    "Rotary positional embeddings (RoPE) for better position encoding",
+    "Released as fully open-source weights under Apache 2.0 — rare for a frontier-class MoE",
+    "Trained on a mix of web data and real-time X (Twitter) data access"
+  ],
+  "brainrotSummary": "Grok-1 is the chaotic neutral of the MoE world. 314B parameters (they actually did the pi thing), 8 experts, 2 active — xAI took the Mixtral playbook and scaled it. then they open-sourced the whole thing under Apache 2.0, which nobody saw coming. short context window is the main weakness. the architecture is competent. the vibe is unhinged. galaxy brain energy disguised as an NPC.",
+  "brainrotRating": "galaxy brain",
+  "visualTemplate": "moe",
+  "comparisons": {
+    "gpt2": "GPT-2 is the quiet origin. Grok-1 is the loud arrival, 5 years later.",
+    "gpt3": "GPT-3 proved scale. Grok-1 added MoE and open-sourced it. different priorities.",
+    "llama2": "LLaMA 2 is Meta's open bet. Grok-1 is xAI's open bet. Grok has more params, Meta has more context.",
+    "gpt4": "Grok-1 is trying to compete with GPT-4 with open weights. not there yet. points for effort.",
+    "claude3": "Claude 3 has a constitution. Grok-1 has chaos. entirely different approaches.",
+    "llama3-instruct": "Grok-1 has more params. LLaMA 3 Instruct has better instruction following. dense vs sparse.",
+    "deepseek-v3": "both went big with MoE. DeepSeek was significantly more efficient about it.",
+    "mixtral-8x7b": "Mixtral proved MoE at 46B. Grok-1 said hold on and went to 314B with the same idea."
+  },
+  "source": "https://github.com/xai-org/grok-1"
+}

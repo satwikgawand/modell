@@ -1,0 +1,46 @@
+{
+  "slug": "mixtral-8x7b",
+  "name": "Mixtral 8x7B",
+  "category": "moe",
+  "year": 2023,
+  "org": "Mistral AI",
+  "brainrotTitle": "the efficiency speedrun",
+  "brainrotOneliner": "8 experts, 2 active at a time. 46B parameters but feels like 13B at inference. the MoE concept proof that changed everything.",
+  "stats": {
+    "totalParams": "46.7B",
+    "activeParams": "12.9B",
+    "contextLength": "32k",
+    "layers": 32,
+    "attentionHeads": 32,
+    "license": "Apache 2.0"
+  },
+  "brainrotStats": {
+    "totalParams": "46.7B (deceptively large)",
+    "activeParams": "12.9B active (the sparsity bag 💼)",
+    "contextLength": "32k tokens (solid but not cracked)",
+    "layers": "32 layers (efficient by design)",
+    "attentionHeads": "32 heads (does the job)",
+    "license": "Apache 2.0 (genuinely free, no drama)"
+  },
+  "architectureType": "moe",
+  "keyInnovations": [
+    "Sparse Mixture of Experts — 8 feed-forward expert blocks, only 2 active per token",
+    "Sliding window attention enables efficient 32k context handling",
+    "Outperforms LLaMA 2 70B while activating only a fraction of the parameters",
+    "First major open-source MoE model — proved the architecture is accessible, not just Google-scale"
+  ],
+  "brainrotSummary": "Mixtral is the model that proved MoE isn't just for trillion-parameter closed labs. 8 experts, route to 2 at a time, watch your active parameter count drop to ~13B while maintaining 46B worth of knowledge. it beats LLaMA 2 70B on most benchmarks at effectively half the inference cost. the efficiency speedrun that made everyone take Mistral seriously.",
+  "brainrotRating": "main character",
+  "visualTemplate": "moe",
+  "comparisons": {
+    "gpt2": "GPT-2 never heard of experts. Mixtral said sparsity is the future.",
+    "gpt3": "GPT-3 is dense and large. Mixtral is sparse and gets similar results for less compute.",
+    "llama2": "Mixtral beats LLaMA 2 70B while being cheaper to run. efficiency wins.",
+    "gpt4": "Mixtral is trying to close the gap on GPT-4 without the budget. getting closer.",
+    "claude3": "Mixtral is Apache 2.0 and open. Claude 3 is proprietary and constitutional. vibes differ.",
+    "llama3-instruct": "Mixtral MoE vs LLaMA 3 dense. both excellent open models, different architectural bets.",
+    "deepseek-v3": "Mixtral proved the MoE concept. DeepSeek V3 took it to 671B and made it even more efficient.",
+    "grok-1": "Mixtral is clean and efficient. Grok-1 is massive and chaotic. different MoE energy."
+  },
+  "source": "https://arxiv.org/abs/2401.04088"
+}

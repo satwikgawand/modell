@@ -1,0 +1,44 @@
+{
+  "slug": "gpt4",
+  "name": "GPT-4",
+  "category": "instruction-tuned",
+  "year": 2023,
+  "org": "OpenAI",
+  "brainrotTitle": "the final boss (allegedly)",
+  "brainrotOneliner": "architecture details undisclosed. probably MoE. passed the bar exam. currently employed at every startup.",
+  "stats": {
+    "totalParams": "~1.8T (estimated)",
+    "contextLength": "128k",
+    "layers": 120,
+    "attentionHeads": 96,
+    "license": "Proprietary"
+  },
+  "brainrotStats": {
+    "totalParams": "classified (they will not tell us 😭)",
+    "contextLength": "128k tokens (finally, long-term memory arc)",
+    "layers": "deep (estimated, not confirmed)",
+    "attentionHeads": "96+ heads (trust the process)",
+    "license": "Proprietary (very closed, very no)"
+  },
+  "architectureType": "instruction-tuned transformer (likely MoE)",
+  "keyInnovations": [
+    "RLHF + PPO alignment pipeline made the model dramatically more useful and safe",
+    "Multimodal input capability — processes images alongside text",
+    "System prompt adherence and instruction-following at a qualitatively different level",
+    "Context window scaled to 128k tokens with good long-range coherence"
+  ],
+  "brainrotSummary": "GPT-4 is the model where OpenAI went full classified. they won't confirm the architecture, won't confirm the parameter count, won't confirm anything. what we know: it passed the bar exam, it's probably MoE, and it completely redefined what 'useful AI' means. RLHF alignment plus scale produced something qualitatively different from GPT-3.",
+  "brainrotRating": "main character",
+  "visualTemplate": "instruction-tuned",
+  "comparisons": {
+    "gpt2": "GPT-2 is the NPC ancestor. GPT-4 is what happens 4 years and billions of dollars later.",
+    "gpt3": "GPT-4 is GPT-3 plus RLHF plus multimodal plus secrecy. bigger, better, classified.",
+    "llama2": "GPT-4 is still the benchmark LLaMA 2 measures itself against.",
+    "claude3": "the eternal matchup. OpenAI vs Anthropic, alignment vs capabilities, both converging on the same benchmarks.",
+    "llama3-instruct": "GPT-4 is what LLaMA 3 Instruct is benchmarking against. open-source catching up but not there yet.",
+    "deepseek-v3": "GPT-4 is the closed standard. DeepSeek V3 says you can get close for a fraction of the cost.",
+    "mixtral-8x7b": "GPT-4 is the ceiling. Mixtral is the efficient challenger — not beating it but getting surprisingly close on a budget.",
+    "grok-1": "GPT-4 is OpenAI's flagship. Grok-1 is what xAI built to compete, openly, chaotically."
+  },
+  "source": "https://openai.com/research/gpt-4"
+}

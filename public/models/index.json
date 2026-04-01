@@ -1,0 +1,112 @@
+{
+  "models": [
+    {
+      "slug": "gpt2",
+      "name": "GPT-2",
+      "category": "vanilla-transformer",
+      "year": 2019,
+      "org": "OpenAI",
+      "brainrotTitle": "the original NPC",
+      "brainrotOneliner": "117M parameters. predicted the next token before it was cool. the ancestor that started everything.",
+      "brainrotRating": "npc",
+      "visualTemplate": "vanilla-transformer",
+      "totalParams": "1.5B"
+    },
+    {
+      "slug": "gpt3",
+      "name": "GPT-3",
+      "category": "vanilla-transformer",
+      "year": 2020,
+      "org": "OpenAI",
+      "brainrotTitle": "the scaling hypothesis in human form",
+      "brainrotOneliner": "175B parameters. same recipe as GPT-2, just turned every dial to maximum. the original scale-pilled moment.",
+      "brainrotRating": "npc",
+      "visualTemplate": "vanilla-transformer",
+      "totalParams": "175B"
+    },
+    {
+      "slug": "llama2",
+      "name": "LLaMA 2",
+      "category": "vanilla-transformer",
+      "year": 2023,
+      "org": "Meta",
+      "brainrotTitle": "the open-source protagonist",
+      "brainrotOneliner": "70B parameters, actually open, grouped-query attention. meta handed the community a main character and said go crazy.",
+      "brainrotRating": "main character",
+      "visualTemplate": "vanilla-transformer",
+      "totalParams": "70B"
+    },
+    {
+      "slug": "gpt4",
+      "name": "GPT-4",
+      "category": "instruction-tuned",
+      "year": 2023,
+      "org": "OpenAI",
+      "brainrotTitle": "the final boss (allegedly)",
+      "brainrotOneliner": "architecture details undisclosed. probably MoE. passed the bar exam. currently employed at every startup.",
+      "brainrotRating": "main character",
+      "visualTemplate": "instruction-tuned",
+      "totalParams": "~1.8T (est.)"
+    },
+    {
+      "slug": "claude3",
+      "name": "Claude 3",
+      "category": "instruction-tuned",
+      "year": 2024,
+      "org": "Anthropic",
+      "brainrotTitle": "the one that actually reads the instructions",
+      "brainrotOneliner": "constitutional AI, 200k context, and it will refuse to help you do crimes with more eloquence than any other model.",
+      "brainrotRating": "main character",
+      "visualTemplate": "instruction-tuned",
+      "totalParams": "~130B (est.)"
+    },
+    {
+      "slug": "llama3-instruct",
+      "name": "LLaMA 3 Instruct",
+      "category": "instruction-tuned",
+      "year": 2024,
+      "org": "Meta",
+      "brainrotTitle": "the open-source redemption arc",
+      "brainrotOneliner": "405B parameters, actually open weights, benchmarks competitive with GPT-4. meta said hold my beer and then did it.",
+      "brainrotRating": "main character",
+      "visualTemplate": "instruction-tuned",
+      "totalParams": "405B"
+    },
+    {
+      "slug": "deepseek-v3",
+      "name": "DeepSeek V3",
+      "category": "moe",
+      "year": 2024,
+      "org": "DeepSeek",
+      "brainrotTitle": "the main character",
+      "brainrotOneliner": "671B parameters but only 37B doing actual werk at any time. efficiency arc unlocked.",
+      "brainrotRating": "main character",
+      "visualTemplate": "moe",
+      "totalParams": "671B"
+    },
+    {
+      "slug": "mixtral-8x7b",
+      "name": "Mixtral 8x7B",
+      "category": "moe",
+      "year": 2023,
+      "org": "Mistral AI",
+      "brainrotTitle": "the efficiency speedrun",
+      "brainrotOneliner": "8 experts, 2 active at a time. 46B parameters but feels like 13B at inference. the MoE concept proof that changed everything.",
+      "brainrotRating": "main character",
+      "visualTemplate": "moe",
+      "totalParams": "46.7B"
+    },
+    {
+      "slug": "grok-1",
+      "name": "Grok-1",
+      "category": "moe",
+      "year": 2024,
+      "org": "xAI",
+      "brainrotTitle": "the chaotic neutral",
+      "brainrotOneliner": "314B parameters, 8 experts, 2 active, actually open-source. elon dropped the weights and walked away.",
+      "brainrotRating": "galaxy brain",
+      "visualTemplate": "moe",
+      "totalParams": "314B"
+    }
+  ]
+}

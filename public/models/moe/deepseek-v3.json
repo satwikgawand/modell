@@ -1,0 +1,46 @@
+{
+  "slug": "deepseek-v3",
+  "name": "DeepSeek V3",
+  "category": "moe",
+  "year": 2024,
+  "org": "DeepSeek",
+  "brainrotTitle": "the main character",
+  "brainrotOneliner": "671B parameters but only 37B doing actual werk at any time. efficiency arc unlocked.",
+  "stats": {
+    "totalParams": "671B",
+    "activeParams": "37B",
+    "contextLength": "128k",
+    "layers": 61,
+    "attentionHeads": 128,
+    "license": "DeepSeek License"
+  },
+  "brainrotStats": {
+    "totalParams": "delulu huge 🤪 (671B total)",
+    "activeParams": "main character active path (37B actually firing)",
+    "contextLength": "long-term memory unlocked (128k tokens)",
+    "layers": "61 layers deep (he's built different)",
+    "attentionHeads": "128 heads (multi-tasking king)",
+    "license": "DeepSeek vibes (open-ish)"
+  },
+  "architectureType": "moe",
+  "keyInnovations": [
+    "Multi-head Latent Attention (MLA) compresses KV cache into latent vectors — massive memory savings",
+    "DeepSeekMoE uses 256 fine-grained experts with 1 shared + 8 routed active per token",
+    "Multi-Token Prediction (MTP) auxiliary objective improves training efficiency",
+    "Trained for only $5.6M — the cost efficiency claim that shook the industry"
+  ],
+  "brainrotSummary": "DeepSeek looked at dense transformers and said 'why activate everything when you can be selective'. MoE routing means only a fraction of parameters fire per token — maximum efficiency, minimum NPC energy. the $5.6M training cost claim sent the entire AI industry into a crisis of confidence. this is the model that made everyone question whether the expensive approach was ever necessary.",
+  "brainrotRating": "main character",
+  "visualTemplate": "moe",
+  "comparisons": {
+    "gpt2": "GPT-2 is the NPC ancestor. DeepSeek V3 is 5 years and a different country's AI ambitions later.",
+    "gpt3": "GPT-3 proved scale works. DeepSeek V3 proved you can be smarter about it.",
+    "llama2": "LLaMA 2 opened the era. DeepSeek V3 took it to a different level with MoE.",
+    "gpt4": "DeepSeek V3 is the first open model to genuinely threaten GPT-4's status. the west is nervous.",
+    "claude3": "DeepSeek efficiency vs Anthropic safety. different threat models, different architectures.",
+    "llama3-instruct": "LLaMA 3 dense vs DeepSeek sparse. meta's scale vs deepseek's efficiency. both winning.",
+    "mixtral-8x7b": "both MoE, different era. Mixtral proved the concept. DeepSeek V3 perfected it.",
+    "grok-1": "both went big with MoE. DeepSeek was more efficient about it. the receipts are public."
+  },
+  "source": "https://arxiv.org/abs/2412.19437"
+}

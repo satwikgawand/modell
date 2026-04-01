@@ -1,0 +1,44 @@
+{
+  "slug": "gpt3",
+  "name": "GPT-3",
+  "category": "vanilla-transformer",
+  "year": 2020,
+  "org": "OpenAI",
+  "brainrotTitle": "the scaling hypothesis in human form",
+  "brainrotOneliner": "175B parameters. same recipe as GPT-2, just turned every dial to maximum. the original scale-pilled moment.",
+  "stats": {
+    "totalParams": "175B",
+    "contextLength": "4096",
+    "layers": 96,
+    "attentionHeads": 96,
+    "license": "Proprietary"
+  },
+  "brainrotStats": {
+    "totalParams": "175B (the original big number era)",
+    "contextLength": "4k tokens (short by today's standards lol)",
+    "layers": "96 layers deep (committed to the bit)",
+    "attentionHeads": "96 heads (very much overthinking it)",
+    "license": "Proprietary (no touchy)"
+  },
+  "architectureType": "decoder-only transformer",
+  "keyInnovations": [
+    "Validated the scaling hypothesis at unprecedented scale — more compute = more capability",
+    "Demonstrated strong few-shot learning without any fine-tuning",
+    "In-context learning as an emergent behavior — not explicitly trained for it",
+    "Established the 175B parameter regime as the benchmark for capable language models"
+  ],
+  "brainrotSummary": "GPT-3 is the scaling hypothesis made flesh. take GPT-2, multiply everything by 100, train on basically all text that existed, and watch few-shot capabilities emerge from nowhere. no architectural innovation needed — just more. this single model convinced the entire industry that scale was the path. era-defining NPC behavior.",
+  "brainrotRating": "npc",
+  "visualTemplate": "vanilla-transformer",
+  "comparisons": {
+    "gpt2": "GPT-3 is just GPT-2 after a long bulk season. same architecture, 1000x the parameters. the glow-up.",
+    "deepseek-v3": "GPT-3 proved scale works. DeepSeek V3 proved you can be smarter about it. different eras.",
+    "llama2": "LLaMA 2 is what happens when Meta decides everyone should have access to a GPT-3 class model. democratization arc.",
+    "gpt4": "GPT-4 took GPT-3's soul and put it through an alignment machine. the glow-up continues.",
+    "claude3": "GPT-3 established what big models can do. Claude 3 is what you get when you spend years making them actually safe and useful.",
+    "llama3-instruct": "GPT-3 is the original scale moment. LLaMA 3 Instruct is the open-source community's answer, 4 years later.",
+    "mixtral-8x7b": "GPT-3 is dense all the way through. Mixtral said that's inefficient and routed the experts instead.",
+    "grok-1": "GPT-3 showed what scale unlocks. Grok-1 is a competitor's answer from the team that built the original."
+  },
+  "source": "https://arxiv.org/abs/2005.14165"
+}
