@@ -1,0 +1,44 @@
+{
+  "slug": "claude3",
+  "name": "Claude 3",
+  "category": "instruction-tuned",
+  "year": 2024,
+  "org": "Anthropic",
+  "brainrotTitle": "the one that actually reads the instructions",
+  "brainrotOneliner": "constitutional AI, 200k context, and it will refuse to help you do crimes with more eloquence than any other model.",
+  "stats": {
+    "totalParams": "~52B (Haiku est.) / ~130B (Sonnet est.)",
+    "contextLength": "200k",
+    "layers": 96,
+    "attentionHeads": 96,
+    "license": "Proprietary"
+  },
+  "brainrotStats": {
+    "totalParams": "classified (Anthropic also won't tell us, respectfully)",
+    "contextLength": "200k tokens (longest context era, genuinely absurd)",
+    "layers": "deep (safety-tuned all the way down)",
+    "attentionHeads": "96+ heads (attending to safety AND helpfulness)",
+    "license": "Proprietary (Anthropic LLC vibes)"
+  },
+  "architectureType": "instruction-tuned transformer with Constitutional AI",
+  "keyInnovations": [
+    "Constitutional AI — model is trained to critique its own outputs against a set of principles",
+    "200k token context window — one of the longest context windows at launch",
+    "RLHF from AI feedback (RLAIF) reduces dependence on human labelers",
+    "Tiered model family: Haiku (fast/cheap), Sonnet (balanced), Opus (capable)"
+  ],
+  "brainrotSummary": "Claude 3 is what happens when your entire company thesis is that safety and capability aren't at odds. Constitutional AI is genuinely innovative — the model learns to evaluate its own outputs. the 200k context window was a landmark. the refusals are eloquent. the vibes are different from OpenAI. this is the model that made people realize the competition was real.",
+  "brainrotRating": "main character",
+  "visualTemplate": "instruction-tuned",
+  "comparisons": {
+    "gpt2": "GPT-2 is the origin. Claude 3 is the safety-first, constitutional-AI future GPT-2 couldn't have imagined.",
+    "gpt3": "Claude 3 is what you get when you spend years on alignment instead of just adding parameters.",
+    "llama2": "LLaMA 2 is open. Claude 3 is closed and constitutional. different philosophies on what responsible AI looks like.",
+    "gpt4": "the eternal matchup. benchmarks are close. vibes are different. both refusing to tell you their architecture.",
+    "llama3-instruct": "Claude 3 is proprietary and safety-focused. LLaMA 3 Instruct is open and getting better fast.",
+    "deepseek-v3": "Claude 3 is Anthropic's safety-first bet. DeepSeek V3 is China's efficiency-first bet. different worlds.",
+    "mixtral-8x7b": "Claude 3 is dense and aligned. Mixtral is sparse and open. completely different approaches to the same goal.",
+    "grok-1": "Claude 3 has a constitution. Grok-1 has chaos. different energy."
+  },
+  "source": "https://www.anthropic.com/news/claude-3-family"
+}

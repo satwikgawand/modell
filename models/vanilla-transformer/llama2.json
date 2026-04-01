@@ -1,0 +1,44 @@
+{
+  "slug": "llama2",
+  "name": "LLaMA 2",
+  "category": "vanilla-transformer",
+  "year": 2023,
+  "org": "Meta",
+  "brainrotTitle": "the open-source protagonist",
+  "brainrotOneliner": "70B parameters, actually open, grouped-query attention. meta handed the community a main character and said go crazy.",
+  "stats": {
+    "totalParams": "70B",
+    "contextLength": "4096",
+    "layers": 80,
+    "attentionHeads": 64,
+    "license": "LLaMA 2 Community License"
+  },
+  "brainrotStats": {
+    "totalParams": "70B (the sweet spot era)",
+    "contextLength": "4k tokens (pre-long-context arc)",
+    "layers": "80 layers (efficient stacking)",
+    "attentionHeads": "64 heads (GQA means fewer KV heads tho)",
+    "license": "mostly free (read the fine print)"
+  },
+  "architectureType": "decoder-only transformer",
+  "keyInnovations": [
+    "Grouped-Query Attention (GQA) — reduces KV cache size significantly without losing quality",
+    "Ghost Attention for multi-turn instruction following consistency",
+    "Released with chat-tuned variants and safety-fine-tuned versions",
+    "First widely-available open-weight model competitive with GPT-3.5 class models"
+  ],
+  "brainrotSummary": "LLaMA 2 is the model that made open-source actually competitive. grouped-query attention was a real architectural improvement, not just a scaling trick. the 70B variant went toe-to-toe with GPT-3.5 class models. meta dropped this and the entire fine-tuning ecosystem exploded overnight. open-source protagonist arc fully unlocked.",
+  "brainrotRating": "main character",
+  "visualTemplate": "vanilla-transformer",
+  "comparisons": {
+    "gpt2": "LLaMA 2 took everything GPT-2 established and made it open, efficient, and actually useful. evolution arc.",
+    "gpt3": "LLaMA 2 is what happens when Meta decides everyone should have access to a GPT-3 class model. democratization arc.",
+    "deepseek-v3": "LLaMA 2 opened the era. DeepSeek V3 is what happens when you take the open-source recipe and scale up the ambition.",
+    "gpt4": "LLaMA 2 is the open-source challenger. GPT-4 is still ahead but the gap closed faster than anyone expected.",
+    "claude3": "two different philosophies. Meta says open everything. Anthropic says build it right first.",
+    "llama3-instruct": "LLaMA 2 is the prototype. LLaMA 3 Instruct is the refined version from the same team, one year wiser.",
+    "mixtral-8x7b": "LLaMA 2 is dense. Mixtral took the community momentum and added MoE routing. different efficiency approaches.",
+    "grok-1": "LLaMA 2 is Meta's open bet. Grok-1 is xAI's chaotic energy bet. both trying to compete with OpenAI differently."
+  },
+  "source": "https://arxiv.org/abs/2307.09288"
+}

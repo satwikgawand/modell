@@ -1,0 +1,44 @@
+{
+  "slug": "llama3-instruct",
+  "name": "LLaMA 3 Instruct",
+  "category": "instruction-tuned",
+  "year": 2024,
+  "org": "Meta",
+  "brainrotTitle": "the open-source redemption arc",
+  "brainrotOneliner": "405B parameters, actually open weights, benchmarks competitive with GPT-4. meta said hold my beer and then did it.",
+  "stats": {
+    "totalParams": "405B",
+    "contextLength": "128k",
+    "layers": 126,
+    "attentionHeads": 128,
+    "license": "LLaMA 3 Community License"
+  },
+  "brainrotStats": {
+    "totalParams": "405B (big and actually open, rare combo)",
+    "contextLength": "128k tokens (long-context arc achieved)",
+    "layers": "126 layers (committed to depth)",
+    "attentionHeads": "128 heads (maximum overthinking, open edition)",
+    "license": "mostly open (read the terms, as always)"
+  },
+  "architectureType": "instruction-tuned decoder-only transformer",
+  "keyInnovations": [
+    "Grouped Query Attention (GQA) across all sizes for efficient inference",
+    "128k context window on open-weight model — massive improvement over LLaMA 2",
+    "Supervised fine-tuning + RLHF pipeline producing GPT-4-competitive instruction following",
+    "Released as part of a family: 8B, 70B, 405B — covering the full deployment spectrum"
+  ],
+  "brainrotSummary": "LLaMA 3 Instruct is the open-source community's main character moment. Meta dropped a 405B model with open weights that actually competes with GPT-4 on benchmarks. the 8B variant runs on a laptop and isn't embarrassing. grouped query attention is now table stakes. this is what it looks like when the gap between open and closed models closes for real.",
+  "brainrotRating": "main character",
+  "visualTemplate": "instruction-tuned",
+  "comparisons": {
+    "gpt2": "GPT-2 is where it started. LLaMA 3 Instruct is 5 years and 270x more parameters later.",
+    "gpt3": "LLaMA 3 Instruct is the open-source answer that comes 4 years after GPT-3 set the benchmark.",
+    "llama2": "LLaMA 2 opened the era. LLaMA 3 Instruct refined every single part of it.",
+    "gpt4": "the closest an open model has gotten to GPT-4 class performance. still slightly behind. closing fast.",
+    "claude3": "LLaMA 3 Instruct is open. Claude 3 is constitutional. both trying to be the best aligned model.",
+    "deepseek-v3": "LLaMA 3 is Meta's open bet. DeepSeek V3 is China's efficiency bet. both threatening GPT-4's crown.",
+    "mixtral-8x7b": "LLaMA 3 Instruct is dense. Mixtral is sparse. which efficiency strategy wins is still being debated.",
+    "grok-1": "LLaMA 3 Instruct is Meta's serious answer. Grok-1 is xAI's chaotic answer. different energies entirely."
+  },
+  "source": "https://ai.meta.com/blog/meta-llama-3/"
+}
