@@ -38,3 +38,16 @@
     font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
   }
 }
+
+@keyframes slide-up {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0);    }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+.animate-slide-up   { animation: slide-up   0.25s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
+.animate-fade-in-up { animation: fade-in-up 0.18s ease forwards; }
