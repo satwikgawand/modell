@@ -17,12 +17,12 @@ function ModelSelector({
   onChange: (slug: string) => void
 }) {
   return (
-    <div className="flex items-center gap-2">
-      <span className="text-xs font-mono" style={{ color: '#64748b' }}>{label}</span>
+    <div>
+      <span className="text-xs font-mono block mb-1.5" style={{ color: '#3d3d6b' }}>{label}</span>
       <select
         value={value}
         onChange={e => onChange(e.target.value)}
-        className="text-sm font-mono px-3 py-1.5 rounded outline-none"
+        className="text-sm font-mono px-3 py-2 rounded outline-none w-full"
         style={{ background: '#0f0f1a', color: '#e2e8f0', border: '1px solid #1e1e35' }}
       >
         {options.map(o => (
@@ -65,14 +65,12 @@ function ModelPanel({ slug }: { slug: string }) {
             ['layers', String(model.stats.layers), model.brainrotStats.layers],
             ['attn heads', String(model.stats.attentionHeads), model.brainrotStats.attentionHeads],
           ].map(([label, real, brainrot]) => (
-            <div key={label} className="grid grid-cols-2 gap-3 px-4 py-2.5" style={{ background: '#0f0f1a' }}>
-              <div>
-                <span className="text-xs font-mono block" style={{ color: '#3d3d6b' }}>{label}</span>
+            <div key={label} className="px-4 py-2.5" style={{ background: '#0f0f1a' }}>
+              <span className="text-xs font-mono block mb-0.5" style={{ color: '#3d3d6b' }}>{label}</span>
+              <div className="flex items-baseline gap-1.5 flex-wrap">
                 <span className="text-sm font-mono text-white">{real}</span>
-              </div>
-              <div>
-                <span className="text-xs font-mono block" style={{ color: '#3d3d6b' }}>brainrot</span>
-                <span className="text-xs" style={{ color: '#64748b' }}>{brainrot}</span>
+                <span className="text-xs font-mono" style={{ color: '#1e1e35' }}>·</span>
+                <span className="text-xs" style={{ color: '#475569' }}>{brainrot}</span>
               </div>
             </div>
           ))}
@@ -109,21 +107,37 @@ export default function ComparePage() {
         <p className="text-sm" style={{ color: '#64748b' }}>two models, side by side</p>
       </div>
 
-      {/* Selectors */}
-      <div className="flex flex-wrap items-center gap-4 mb-8 pb-6" style={{ borderBottom: '1px solid #1e1e35' }}>
-        {options.length > 0 && (
-          <>
-            <ModelSelector label="model a" value={modelA} options={options} onChange={setModelA} />
-            <span className="text-sm font-mono" style={{ color: '#3d3d6b' }}>vs</span>
-            <ModelSelector label="model b" value={modelB} options={options} onChange={setModelB} />
-          </>
-        )}
-      </div>
+      {/* Selectors + panels in the same grid so they stay aligned */}
+      <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* Centered "vs" badge */}
+        <div className="hidden lg:flex absolute left-1/2 top-0 -translate-x-1/2 z-10 items-center" style={{ height: '58px' }}>
+          <span
+            className="text-xs font-mono px-2 py-0.5 rounded"
+            style={{ background: '#080810', color: '#3d3d6b', border: '1px solid #1e1e35' }}
+          >
+            vs
+          </span>
+        </div>
 
-      {/* Side by side */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <ModelPanel slug={modelA} />
-        <ModelPanel slug={modelB} />
+        {/* Model A column */}
+        <div className="space-y-6">
+          <div className="pb-4" style={{ borderBottom: '1px solid #1e1e35' }}>
+            {options.length > 0 && (
+              <ModelSelector label="model a" value={modelA} options={options} onChange={setModelA} />
+            )}
+          </div>
+          <ModelPanel slug={modelA} />
+        </div>
+
+        {/* Model B column */}
+        <div className="space-y-6">
+          <div className="pb-4" style={{ borderBottom: '1px solid #1e1e35' }}>
+            {options.length > 0 && (
+              <ModelSelector label="model b" value={modelB} options={options} onChange={setModelB} />
+            )}
+          </div>
+          <ModelPanel slug={modelB} />
+        </div>
       </div>
 
       {/* Verdict */}
