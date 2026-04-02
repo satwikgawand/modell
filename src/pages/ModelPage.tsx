@@ -82,14 +82,12 @@ export default function ModelPage() {
                 ['attn heads', String(model.stats.attentionHeads), model.brainrotStats.attentionHeads],
                 ['license', model.stats.license, model.brainrotStats.license],
               ].map(([label, real, brainrot]) => (
-                <div key={label} className="grid grid-cols-2 gap-4 px-4 py-3" style={{ background: '#0f0f1a' }}>
-                  <div>
-                    <span className="text-xs font-mono" style={{ color: '#3d3d6b' }}>{label}</span>
-                    <p className="text-sm font-mono text-white mt-0.5">{real}</p>
-                  </div>
-                  <div>
-                    <span className="text-xs font-mono" style={{ color: '#3d3d6b' }}>brainrot</span>
-                    <p className="text-sm leading-snug mt-0.5" style={{ color: '#64748b' }}>{brainrot}</p>
+                <div key={label} className="px-4 py-3" style={{ background: '#0f0f1a' }}>
+                  <span className="text-xs font-mono block mb-0.5" style={{ color: '#3d3d6b' }}>{label}</span>
+                  <div className="flex items-baseline gap-1.5 flex-wrap">
+                    <span className="text-sm font-mono text-white">{real}</span>
+                    <span className="text-xs font-mono" style={{ color: '#1e1e35' }}>·</span>
+                    <span className="text-sm leading-snug" style={{ color: '#64748b' }}>{brainrot}</span>
                   </div>
                 </div>
               ))}
